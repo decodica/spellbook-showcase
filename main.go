@@ -47,10 +47,16 @@ func main() {
 	m := flamel.Instance()
 
 	opts := spellbook.Options{}
+	opts.Bucket = "flamel-test-bucket"
+	opts.Salt = "salt-salty-salmon"
+
+	// set supported languages
 	opts.Languages = []language.Tag{
 		language.Italian,
 		language.English,
 	}
+
+	// set supported categories
 	opts.Categories = []spellbook.SupportedCategory{
 		{Type: "Content", Name: "services", Label: "Services"},
 		{Type: "Content", Name: "news", Label: "News", DefaultAttachmentGroups: []spellbook.DefaultAttachmentGroup{
@@ -58,14 +64,17 @@ func main() {
 		}},
 		{Type: "Event", Name: "events", Label: "Events"},
 	}
+
 	opts.StaticPages = []spellbook.StaticPageCode{
 		HOME,
 		PRODUCTS,
 	}
+
 	opts.SpecialCodes = []spellbook.SpecialCode{
 		HomeBanner,
 		FB,
 	}
+
 	opts.Actions = []spellbook.SupportedAction{
 		{Type: spellbook.ActionTypeNormal, Name: "cleanindextest", Endpoint: "/api/cleanindextest", Method: http.MethodGet},
 		{Type: spellbook.ActionTypeUpload, Name: "places", Endpoint: "/api/places", Method: http.MethodGet},

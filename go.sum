@@ -10,6 +10,8 @@ cloud.google.com/go/datastore v1.0.0 h1:Kt+gOPPp2LEPWp8CSfxhsM8ik9CcyE/gYu+0r+Rn
 cloud.google.com/go/datastore v1.0.0/go.mod h1:LXYbyblFSglQ5pkeyhO+Qmw7ukd3C+pD7TKLgZqpHYE=
 decodica.com/flamel v0.5.1 h1:EcchRyEeR+eWu7n5nNa++R74xTd1eYKh9EZWAnv//uM=
 decodica.com/flamel v0.5.1/go.mod h1:QjtknKTFnKo2eNx2OWFa5+iF020V4xhd4VgyshxRqMY=
+decodica.com/flamel v0.5.2 h1:857U3EU0CRi9TIxado8Ty00ahwy4eivb6SuJH+rhwQ0=
+decodica.com/flamel v0.5.2/go.mod h1:QjtknKTFnKo2eNx2OWFa5+iF020V4xhd4VgyshxRqMY=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
