@@ -3,7 +3,6 @@ package main // github.com/decodica/spellbook-showcase
 import (
 	"context"
 	"decodica.com/flamel"
-	"decodica.com/flamel/model"
 	"decodica.com/spellbook"
 	"decodica.com/spellbook/configuration"
 	"decodica.com/spellbook/content"
@@ -47,8 +46,6 @@ func main() {
 	m := flamel.Instance()
 
 	opts := spellbook.Options{}
-	opts.Bucket = "flamel-test-bucket"
-	opts.Salt = "salt-salty-salmon"
 
 	// set supported languages
 	opts.Languages = []language.Tag{
@@ -266,6 +263,5 @@ func main() {
 	}, nil)
 
 	m.Router = &instance.Router
-	m.AddService(&model.Service{})
 	m.Run(instance)
 }
