@@ -3,6 +3,7 @@ package main // github.com/decodica/spellbook-showcase
 import (
 	"context"
 	"decodica.com/flamel"
+	"decodica.com/flamel/model"
 	"decodica.com/spellbook"
 	"decodica.com/spellbook/configuration"
 	"decodica.com/spellbook/content"
@@ -261,6 +262,9 @@ func main() {
 		c := CleanController{}
 		return &c
 	}, nil)
+
+
+	m.AddService(&model.Service{})
 
 	m.Router = &instance.Router
 	m.Run(instance)
